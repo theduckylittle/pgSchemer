@@ -29,7 +29,7 @@ Requires
 Pleas for Help
 --------------
 
-I don't believe we are the only folks with this problem.  If you have more intimate knowledge of how PostgreSQL's information schema works to define and relate tables please contibute but enhancing the tests in this code that detects changes.  If you just want to slog through it like we did then please fork and add some code for additional column types, tests, the lot.  This project is in its infancy and offers a lot of room to grow.
+I don't believe we are the only folks with this problem.  If you have more intimate knowledge of how PostgreSQL's information schema works to define and relate tables please contibute by enhancing the tests in this code that detects changes.  If you just want to slog through it like we did then please fork and add some code for additional column types, tests, the lot.  This project is in its infancy and offers a lot of room to grow.
 
 An Example?
 -----------
