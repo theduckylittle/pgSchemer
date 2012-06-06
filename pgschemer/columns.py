@@ -215,6 +215,15 @@ class BooleanColumn(IntegerColumn):
 		else:
 			return 'default false'
 
+class PrimaryKeyColumn(Column):
+	def __init__(self, conn, columnName):
+		Column.__init__(self, conn, columnName, 'serial', precision=None, default=None, notNull=False, forceReplace=False, primaryKey=True)
+
+	def getDefaultDefinition(self):
+		return ''
+	
+
+
 #class SerialPrimaryKeyColumn(Column):
 	
 
