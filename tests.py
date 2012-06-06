@@ -1,11 +1,8 @@
 #!/usr/bin/env python
 
 import psycopg2
-
-
-from pgschemer.columns import VarcharColumn,SmallIntColumn,IntegerColumn,BigIntColumn,BooleanColumn
+from pgschemer.columns import VarcharColumn,SmallIntColumn,IntegerColumn,BigIntColumn,BooleanColumn,PrimaryKeyColumn
 from pgschemer import Table
-
 
 conn = psycopg2.connect("dbname=osm")
 
@@ -17,6 +14,7 @@ def execute_statements(conn, statements):
 	
 
 test_table = Table(conn, "test_table", columns=[
+	PrimaryKeyColumn(conn, "pk"),
 	VarcharColumn(conn, "a", 255),
 	VarcharColumn(conn, "b", 128),
 	IntegerColumn(conn, "c"),
